@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gateway to the World A2 — Diagnostic Test Units 1–2</title>
+<style>
+:root{--p:#74416f;--p2:#eaddea;--bg:#f7f4f8;--ink:#29242b;--muted:#6e6870;--ok:#e7f4e8;--bad:#fae7e7;--line:#e7e0e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1050px;margin:auto;padding:22px 16px 60px}
+.hero{background:linear-gradient(135deg,#70416f,#956a91);color:#fff;border-radius:22px;padding:30px 32px;box-shadow:0 10px 30px #0001}
+.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:6px 0;opacity:.95}
+.pill{display:inline-block;background:#ffffff22;border:1px solid #ffffff44;padding:5px 10px;border-radius:99px;margin:8px 5px 0 0;font-size:13px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;margin:18px 0;box-shadow:0 4px 18px #00000008}
+h2{color:var(--p);margin:0 0 15px}h3{margin:18px 0 8px}.note{background:#f4edf5;border-left:4px solid var(--p);padding:12px 15px;border-radius:8px}
+.q{padding:17px 0;border-top:1px solid var(--line)}.q:first-child{border-top:0}.q b{display:block;margin-bottom:9px}
+label{display:block;padding:8px 10px;border-radius:9px;cursor:pointer}label:hover{background:#faf7fb}
+input[type=radio],input[type=checkbox]{margin-right:9px}input[type=text],textarea{width:100%;padding:10px 12px;border:1px solid #c9c2ca;border-radius:9px;font:inherit}textarea{min-height:150px}
+select{padding:9px;border:1px solid #c9c2ca;border-radius:9px;font:inherit}
+button{border:0;border-radius:10px;padding:11px 17px;background:var(--p);color:white;font-size:15px;cursor:pointer;margin:4px}
+button.secondary{background:#8b858c}.actions{position:sticky;bottom:10px;background:#fff;border:1px solid var(--line);padding:10px;border-radius:14px;box-shadow:0 5px 20px #0002;z-index:5}
+.feedback{display:none;margin-top:8px;padding:9px 11px;border-radius:8px;font-size:14px}
+.teacher{display:none;background:#fff8d9;border:1px dashed #c5a94a;padding:14px;border-radius:10px;margin-top:12px}
+.result{font-size:23px;font-weight:700;color:var(--p);margin-top:10px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:#faf8fb;border-radius:12px;padding:12px}.small{font-size:13px;color:var(--muted)}
+
+@media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+<h1>Gateway to the World A2</h1>
+<p><b>Diagnostic Test — Units 1–2</b></p>
+<p>From day to day • Welcome home</p>
+<span class="pill">Vocabulary</span><span class="pill">Grammar</span><span class="pill">Reading</span><span class="pill">Listening</span><span class="pill">Writing</span><span class="pill">Speaking</span>
+</section>
+
+<section class="card">
+<label for="studentName"><b>Student name</b></label>
+<input type="text" id="studentName" placeholder="Enter your name">
+</section>
+
+<form id="test">
+
+<section class="card">
+<h2>Part 1 — Vocabulary · 10 points</h2>
+<p class="small">Everyday activities, free-time activities, places in town, rooms, furniture and housework.</p>
+
+<div class=q><b>1. Put the words in the most natural order for a school morning:</b>
+<label><input type=radio name=q1 value=A> get up → have breakfast → get dressed → go to school</label>
+<label><input type=radio name=q1 value=B> go to school → get up → have breakfast → get dressed</label>
+<label><input type=radio name=q1 value=C> have breakfast → go to school → get up → get dressed</label>
+<label><input type=radio name=q1 value=D> get dressed → go to school → get up → have breakfast</label></div>
+
+<div class=q><b>2. You want to borrow a book. Where do you go?</b>
+<label><input type=radio name=q2 value=A> library</label><label><input type=radio name=q2 value=B> restaurant</label><label><input type=radio name=q2 value=C> art gallery</label><label><input type=radio name=q2 value=D> sports centre</label></div>
+
+<div class=q><b>3. Which pair contains only free-time activities?</b>
+<label><input type=radio name=q3 value=A> hang out with friends / play computer games</label>
+<label><input type=radio name=q3 value=B> do homework / have lunch</label>
+<label><input type=radio name=q3 value=C> brush your teeth / get dressed</label>
+<label><input type=radio name=q3 value=D> start school / finish school</label></div>
+
+<div class=q><b>4. Complete: “We keep our car in the …”</b>
+<label><input type=radio name=q4 value=A> garage</label><label><input type=radio name=q4 value=B> bedroom</label><label><input type=radio name=q4 value=C> dining room</label><label><input type=radio name=q4 value=D> bathroom</label></div>
+
+<div class=q><b>5. Which object is furniture?</b>
+<label><input type=radio name=q5 value=A> wardrobe</label><label><input type=radio name=q5 value=B> shower</label><label><input type=radio name=q5 value=C> window</label><label><input type=radio name=q5 value=D> garden</label></div>
+
+<div class=q><b>6. Which room would you normally find a cooker in?</b>
+<label><input type=radio name=q6 value=A> kitchen</label><label><input type=radio name=q6 value=B> bedroom</label><label><input type=radio name=q6 value=C> hall</label><label><input type=radio name=q6 value=D> garage</label></div>
+
+<div class=q><b>7. Choose the correct housework phrase.</b>
+<label><input type=radio name=q7 value=A> vacuum the carpet</label><label><input type=radio name=q7 value=B> vacuum the dishes</label><label><input type=radio name=q7 value=C> vacuum the clothes</label><label><input type=radio name=q7 value=D> vacuum the dinner</label></div>
+
+<div class=q><b>8. Where can you see paintings?</b>
+<label><input type=radio name=q8 value=A> art gallery</label><label><input type=radio name=q8 value=B> pharmacy</label><label><input type=radio name=q8 value=C> library</label><label><input type=radio name=q8 value=D> supermarket</label></div>
+
+<div class=q><b>9. Which word does NOT belong with the others?</b>
+<label><input type=radio name=q9 value=A> sofa</label><label><input type=radio name=q9 value=B> armchair</label><label><input type=radio name=q9 value=C> wardrobe</label><label><input type=radio name=q9 value=D> shower</label></div>
+
+<div class=q><b>10. Complete: “On Saturday I usually … with my friends.”</b>
+<label><input type=radio name=q10 value=A> hang out</label><label><input type=radio name=q10 value=B> brush</label><label><input type=radio name=q10 value=C> pack</label><label><input type=radio name=q10 value=D> vacuum</label></div>
+</section>
+
+<section class="card">
+<h2>Part 2 — Grammar · 15 points</h2>
+<p class="small">Present Simple, Present Simple questions/negatives, adverbs of frequency, time prepositions, There is/are, prepositions of place, Present Continuous.</p>
+
+<div class=q><b>11. My brother □ to school by bus every day.</b>
+<label><input type=radio name=q11 value=A> go</label><label><input type=radio name=q11 value=B> goes</label><label><input type=radio name=q11 value=C> is going</label><label><input type=radio name=q11 value=D> going</label></div>
+
+<div class=q><b>12. We □ do homework at school on Fridays.</b>
+<label><input type=radio name=q12 value=A> doesn't</label><label><input type=radio name=q12 value=B> don't</label><label><input type=radio name=q12 value=C> aren't</label><label><input type=radio name=q12 value=D> isn't</label></div>
+
+<div class=q><b>13. □ your parents work on Saturdays?</b>
+<label><input type=radio name=q13 value=A> Does</label><label><input type=radio name=q13 value=B> Do</label><label><input type=radio name=q13 value=C> Are</label><label><input type=radio name=q13 value=D> Is</label></div>
+
+<div class=q><b>14. Choose the correct question.</b>
+<label><input type=radio name=q14 value=A> Where do you usually go after school?</label>
+<label><input type=radio name=q14 value=B> Where you do usually go after school?</label>
+<label><input type=radio name=q14 value=C> Where does you usually go after school?</label>
+<label><input type=radio name=q14 value=D> Where are you usually go after school?</label></div>
+
+<div class=q><b>15. She □ gets up at 7:00.</b>
+<label><input type=radio name=q15 value=A> usually</label><label><input type=radio name=q15 value=B> is usually</label><label><input type=radio name=q15 value=C> usually is</label><label><input type=radio name=q15 value=D> does usually</label></div>
+
+<div class=q><b>16. I have English □ Monday morning.</b>
+<label><input type=radio name=q16 value=A> at</label><label><input type=radio name=q16 value=B> on</label><label><input type=radio name=q16 value=C> in</label><label><input type=radio name=q16 value=D> by</label></div>
+
+<div class=q><b>17. My birthday is □ July.</b>
+<label><input type=radio name=q17 value=A> at</label><label><input type=radio name=q17 value=B> on</label><label><input type=radio name=q17 value=C> in</label><label><input type=radio name=q17 value=D> by</label></div>
+
+<div class=q><b>18. □ a desk in my bedroom.</b>
+<label><input type=radio name=q18 value=A> There are</label><label><input type=radio name=q18 value=B> There is</label><label><input type=radio name=q18 value=C> They are</label><label><input type=radio name=q18 value=D> It is</label></div>
+
+<div class=q><b>19. □ two pictures on the wall.</b>
+<label><input type=radio name=q19 value=A> There is</label><label><input type=radio name=q19 value=B> There are</label><label><input type=radio name=q19 value=C> It is</label><label><input type=radio name=q19 value=D> They is</label></div>
+
+<div class=q><b>20. The lamp is □ the sofa and the armchair.</b>
+<label><input type=radio name=q20 value=A> between</label><label><input type=radio name=q20 value=B> under</label><label><input type=radio name=q20 value=C> behind</label><label><input type=radio name=q20 value=D> opposite</label></div>
+
+<div class=q><b>21. Look! The children □ in the garden.</b>
+<label><input type=radio name=q21 value=A> play</label><label><input type=radio name=q21 value=B> plays</label><label><input type=radio name=q21 value=C> are playing</label><label><input type=radio name=q21 value=D> playing</label></div>
+
+<div class=q><b>22. What □ you doing now?</b>
+<label><input type=radio name=q22 value=A> do</label><label><input type=radio name=q22 value=B> are</label><label><input type=radio name=q22 value=C> is</label><label><input type=radio name=q22 value=D> does</label></div>
+
+<div class=q><b>23. I usually □ TV in the evening, but today I □ a book.</b>
+<label><input type=radio name=q23 value=A> watch / am reading</label>
+<label><input type=radio name=q23 value=B> am watching / read</label>
+<label><input type=radio name=q23 value=C> watch / read</label>
+<label><input type=radio name=q23 value=D> am watching / am reading</label></div>
+
+<div class=q><b>24. Choose the correct sentence.</b>
+<label><input type=radio name=q24 value=A> There aren't any chairs in the kitchen.</label>
+<label><input type=radio name=q24 value=B> There isn't any chairs in the kitchen.</label>
+<label><input type=radio name=q24 value=C> There aren't a chairs in the kitchen.</label>
+<label><input type=radio name=q24 value=D> There isn't chairs in the kitchen.</label></div>
+
+<div class=q><b>25. Choose the correct sentence.</b>
+<label><input type=radio name=q25 value=A> My sister never is late.</label>
+<label><input type=radio name=q25 value=B> My sister is never late.</label>
+<label><input type=radio name=q25 value=C> My sister never late is.</label>
+<label><input type=radio name=q25 value=D> My sister does never late.</label></div>
+</section>
+
+<section class="card">
+<h2>Part 3 — Reading · 5 points</h2>
+<p><b>Read the text.</b></p>
+<div class=note>
+<b>A new routine</b><br><br>
+Mia lives with her parents and her younger brother in a flat near the town centre. On school days, she gets up at half past seven and walks to school. She usually has lunch at school, but on Fridays she goes home for lunch. After school, she sometimes goes to the library because she likes reading. She doesn't usually go to the shopping centre during the week.<br><br>
+At home, Mia's favourite room is the living room. There is a big sofa next to the window and there are two armchairs opposite the TV. Her brother usually plays computer games in his bedroom. Today, however, Mia isn't reading or watching TV. She is helping her parents clean the flat because some friends are coming in the evening.
+</div>
+
+<div class=q><b>26. How does Mia usually get to school?</b>
+<label><input type=radio name=q26 value=A> by bus</label><label><input type=radio name=q26 value=B> by car</label><label><input type=radio name=q26 value=C> on foot</label><label><input type=radio name=q26 value=D> by bike</label></div>
+
+<div class=q><b>27. When does Mia go home for lunch?</b>
+<label><input type=radio name=q27 value=A> every day</label><label><input type=radio name=q27 value=B> on Fridays</label><label><input type=radio name=q27 value=C> at weekends</label><label><input type=radio name=q27 value=D> never</label></div>
+
+<div class=q><b>28. Why does Mia sometimes go to the library?</b>
+<label><input type=radio name=q28 value=A> She likes reading.</label><label><input type=radio name=q28 value=B> She meets her brother there.</label><label><input type=radio name=q28 value=C> She does sport there.</label><label><input type=radio name=q28 value=D> She has lunch there.</label></div>
+
+<div class=q><b>29. Where is the big sofa?</b>
+<label><input type=radio name=q29 value=A> opposite the TV</label><label><input type=radio name=q29 value=B> next to the window</label><label><input type=radio name=q29 value=C> under the TV</label><label><input type=radio name=q29 value=D> behind the armchairs</label></div>
+
+<div class=q><b>30. What is Mia doing today?</b>
+<label><input type=radio name=q30 value=A> She is reading.</label><label><input type=radio name=q30 value=B> She is watching TV.</label><label><input type=radio name=q30 value=C> She is helping her parents clean.</label><label><input type=radio name=q30 value=D> She is going to the shopping centre.</label></div>
+</section>
+
+<section class="card">
+<h2>Part 4 — Listening · 5 points</h2>
+<p class=small>Listening: the teacher will read the text twice. Do not look for the script while completing the task.</p>
+<div class=q><b>31. What time does Leo get up?</b>
+<label><input type=radio name=q31 value=A> 6:00</label><label><input type=radio name=q31 value=B> 7:00</label><label><input type=radio name=q31 value=C> 8:00</label><label><input type=radio name=q31 value=D> 9:00</label></div>
+
+<div class=q><b>32. How does Leo usually go to school?</b>
+<label><input type=radio name=q32 value=A> on foot</label><label><input type=radio name=q32 value=B> by bike</label><label><input type=radio name=q32 value=C> by bus</label><label><input type=radio name=q32 value=D> by car</label></div>
+
+<div class=q><b>33. Where does Leo often go after school?</b>
+<label><input type=radio name=q33 value=A> the library</label><label><input type=radio name=q33 value=B> the sports centre</label><label><input type=radio name=q33 value=C> the shopping centre</label><label><input type=radio name=q33 value=D> the cinema</label></div>
+
+<div class=q><b>34. What does Leo usually like doing there?</b>
+<label><input type=radio name=q34 value=A> reading</label><label><input type=radio name=q34 value=B> swimming</label><label><input type=radio name=q34 value=C> playing basketball</label><label><input type=radio name=q34 value=D> watching films</label></div>
+
+<div class=q><b>35. Why is today different?</b>
+<label><input type=radio name=q35 value=A> His grandparents are visiting.</label><label><input type=radio name=q35 value=B> He has a test.</label><label><input type=radio name=q35 value=C> His friends are at the sports centre.</label><label><input type=radio name=q35 value=D> He is going shopping.</label></div>
+</section>
+
+<section class="card">
+<h2>Part 5 — Writing · teacher assessment</h2>
+<p><b>Write 80–100 words.</b></p>
+<p>You have a new English-speaking penfriend. Write an email about your typical day and your home. Include:</p>
+<ul><li>your usual school/day routine;</li><li>two free-time activities;</li><li>where you live and 3–4 things/rooms in your home;</li><li>what you are doing today.</li></ul>
+<textarea placeholder="Hi! ..."></textarea>
+<p class=small><i>Эту часть проверяет преподаватель.</i></p>
+</section>
+
+<section class="card">
+<h2>Part 6 — Speaking · teacher assessment</h2>
+<p><b>Без подготовки:</b></p>
+<ol>
+<li>Tell me about your typical school day.</li>
+<li>What do you usually do in your free time?</li>
+<li>Describe your home. What rooms and furniture are there?</li>
+<li>What are you doing today?</li>
+</ol>
+<p class=small>Отметь способность ученицы говорить самостоятельно, использовать Present Simple/Continuous и лексику Units 1–2.</p>
+<p class=small><i>Эту часть оценивает преподаватель во время урока.</i></p>
+</section>
+
+<div class=actions>
+<button type="button" onclick="prepareSubmission()">Завершить тест и подготовить ответы</button>
+<button type="button" class=secondary onclick="location.reload()">Начать заново</button>
+<div id="result" class=result></div><div id="diag"></div>
+</div>
+</form>
+</div>
+<script>
+function prepareSubmission(){
+  const name=(document.getElementById('studentName').value||'Student').trim();
+  let lines=['Gateway to the World A2 — Diagnostic Test Units 1–2','Student: '+name,'','Answers:'];
+  for(let i=1;i<=35;i++){
+    const chosen=document.querySelector('input[name=q'+i+']:checked');
+    lines.push(i+'. '+(chosen ? chosen.value : '—'));
+  }
+  const writing=document.querySelector('textarea')?.value.trim()||'—';
+  lines.push('','Writing:',writing,'','Speaking: assessed by teacher.');
+  const text=lines.join('\n');
+  navigator.clipboard?.writeText(text).then(()=>showDone(),()=>fallbackCopy(text));
+}
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();showDone();
+}
+function showDone(){
+  document.getElementById('result').textContent='Ответы скопированы. Отправь их преподавателю.';
+  document.getElementById('diag').textContent='Проверка и баллы будут доступны только преподавателю.';
+}
+</script>
+</body>
+</html>
